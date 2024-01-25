@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="js/openImage.js"></script>
+    <script src="js/openFloor.js"></script>
+    <title>Ēkas stāvu plānojums</title>
+</head>
+<body>
+    <div class="title__wrapper">
+        <h1 class="title">Ēkas stāvu plānojums</h1>
+        <h2 class="subtitle">Ķīpsalas iela 6a/b</h2>
+    </div>
+
+    <div class="tab__wrapper">
+      <div class="w3-bar w3-black buttons">
+        <button class="w3-bar-item w3-button" onclick="openFloor('First')">1 Stāvs</button>
+        <button class="w3-bar-item w3-button" onclick="openFloor('Second')">2 Stāvs</button>
+        <button class="w3-bar-item w3-button" onclick="openFloor('Third')">3 Stāvs</button>
+        <button class="w3-bar-item w3-button" onclick="openFloor('Fourth')">4 Stāvs</button>
+        <button class="w3-bar-item w3-button" onclick="openFloor('Fifth')">5 Stāvs</button>
+      </div>
+
+      <div id="First" class="w3-container w3-display-container floor">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2 class="floor-number">1 Stāvs</h2>
+        <img src="images/floor1.png" alt="Floor Image" class="floor__image">
+      </div>
+      
+      <div id="Second" class="w3-container w3-display-container floor">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2 class="floor-number">2 Stāvs</h2>
+
+        <div class="link__wrapper">
+          <a href="#" class="link" data-container="container1">254</a>
+          <a href="#" class="link" data-container="container1">256</a>
+        </div>
+
+        <div id="container1" class="image-container">
+          <img class="displayed-image" alt="Image">
+        </div>
+        <img src="images/floor2.png" alt="Floor Image" class="floor__image">
+      </div>
+      
+      <div id="Third" class="w3-container w3-display-container floor" style="display:none">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2 class="floor-number">3 Stāvs</h2>
+
+        <div class="link__wrapper">
+          <a href="#" class="link" data-container="container2">300</a>
+          <a href="#" class="link" data-container="container2">310</a>
+          <a href="#" class="link" data-container="container2">313</a>
+          <a href="#" class="link" data-container="container2">318</a>
+          <a href="#" class="link" data-container="container2">338</a>
+          <a href="#" class="link" data-container="container2">340</a>
+          <a href="#" class="link" data-container="container2">342</a>
+        </div>
+
+        <div id="container2" class="image-container">
+          <img class="displayed-image" alt="Image">
+        </div>
+        <img src="images/floor3.png" alt="Floor Image" class="floor__image">
+      </div>
+      
+      <div id="Fourth" class="w3-container w3-display-container floor" style="display:none">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2 class="floor-number">4 Stāvs</h2>
+
+        <div class="link__wrapper">
+          <a href="#" class="link" data-container="container3">400</a>
+          <a href="#" class="link" data-container="container3">422</a>
+          <a href="#" class="link" data-container="container3">428</a>
+        </div>
+
+        <div id="container3" class="image-container">
+          <img class="displayed-image" alt="Image">
+        </div>
+        <img src="images/floor4.png" alt="Floor Image" class="floor__image">
+      </div>
+
+      <div id="Fifth" class="w3-container w3-display-container floor" style="display:none">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2 class="floor-number">5 Stāvs</h2>
+
+        <div class="link__wrapper">
+          <a href="#" class="link" data-container="container4">529</a>
+          <a href="#" class="link" data-container="container4">538</a>
+          <a href="#" class="link" data-container="container4">543</a>
+          <a href="#" class="link" data-container="container4">548</a>
+        </div>
+
+        <div id="container4" class="image-container">
+          <img class="displayed-image" alt="Image">
+        </div>
+        <img src="images/floor5.png" alt="Floor Image" class="floor__image">
+      </div>
+    </div>
+</body>
+</html>
